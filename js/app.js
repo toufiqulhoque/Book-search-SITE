@@ -39,7 +39,7 @@ const displaySearchResult = data => {
                 <h3 class="card-title px-3">Book Name:${doc.title ? doc.title : 'Unknown'}</h3>
                 <h5 class="card-title px-3">Author Name:${doc.author_name ? doc.author_name : 'Unknown'}</h5>
                 <h5 class="card-title px-3">Publish Year:${doc.publish_year ? doc.publish_year : 'Unknown'}</h5>
-                <h5 class="card-title px-3">Publisher:${doc.publisher ? doc.publisher : 'Unknown publisher'}</h5>
+                <h5 class="card-title px-3">Publisher:${doc.publisher ? doc.publisher[0] : 'Unknown publisher'}</h5>
                 <h5 class="card-title px-3">First Publish Year:${doc.first_publish_year}</h5>
                 <p class="card-text px-3">Edition:${doc.edition_count ? doc.edition_count : 'Unknown'}</p>
                 

@@ -33,7 +33,7 @@ const displaySearchResult = data => {
         //Creat HTML
         div.innerHTML = `
         
-        <div onclick="cardClicked()" class="card h-100 rounded-3" style="background-color: #dbc76f;">
+        <div class="card h-100 rounded-3" style="background-color: #dbc76f;">
                 <img  src="https://covers.openlibrary.org/b/id/${doc.cover_i ? doc.cover_i : '10909258'}-M.jpg" class="card-img-top p-4 m-auto rounded-3" alt="..."style="width: 100%; height: 400px;">
 
                 <h3 class="card-title px-3">Book Name:${doc.title ? doc.title : 'Unknown'}</h3>
